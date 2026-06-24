@@ -15,17 +15,18 @@ def add_documents(documents):
     for idx, doc in enumerate(documents):
 
         embedding = model.encode(doc["content"]).tolist()
+        
 
         collection.add(
-            ids=[str(idx)],
-            embeddings=[embedding],
-            documents=[doc["content"]],
-            metadatas=[
-                {
-                    "file_name": doc["file_name"]
-                }
-            ]
-        )
+    ids=[f"{doc['filename']}_{idx}"],
+    embeddings=[embedding],
+    documents=[doc["content"]],
+    metadatas=[
+    {
+        "filename": doc["filename"]
+    }
+]
+)
 
 
 def search_documents(query):
@@ -34,7 +35,7 @@ def search_documents(query):
 
     results = collection.query(
         query_embeddings=[query_embedding],
-        n_results=2
+        n_results=5
     )
 
     return results

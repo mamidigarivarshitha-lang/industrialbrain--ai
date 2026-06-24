@@ -1,0 +1,10 @@
+Pump P101 failed on 12 January 2026.
+
+Observed Issue:
+Bearing wear and excessive vibration.
+
+Action Taken:
+Bearing replaced.
+
+Engineer:
+Ravi Kumar
