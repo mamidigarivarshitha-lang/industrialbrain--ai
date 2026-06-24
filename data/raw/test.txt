@@ -1,0 +1,8 @@
+Machine ID: P500
+Type: Pump
+Issue: Overheating
+Cause: Cooling failure
+Maintenance Action: Cooling fan replaced
+Inspection: Completed on 20 July 2026
+Next Inspection: 25 August 2026
+Safety SOP: SOP-22 followed
